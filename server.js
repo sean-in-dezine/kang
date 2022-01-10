@@ -6,7 +6,7 @@ const moment = require('moment')
 
 
 const app = express()
-const port = 3333
+const port = 8080
 app.use(morgan('dev'))
 app.listen(port, console.log(`port listening on ${port}`.red))
 app.use(express.static(__dirname + "/public"));
