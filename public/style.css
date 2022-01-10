@@ -1,0 +1,124 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    vertical-align: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+}
+body {
+    background-color: rgba(115, 62, 62, 0.428);
+}
+img {
+    width:  40vw;
+    place-items: left;
+    margin-left: -10vw;
+ 
+}
+
+h2 {
+    color: #ffffffc7;
+    background-color: black;
+    padding: 3vh;
+}
+
+h3 {
+    color: #13bdec;
+    background-color: black;
+    padding: 2vh;
+}
+
+h4 {
+    color: #8539bb;
+    background-color: black;
+    padding: 1vh;
+}
+
+ul {
+    list-style: none;
+    background-color: rgb(84, 58, 11);
+    padding: -20vh;
+    margin: -3vh;
+    margin-top: 5vh;
+    
+}
+
+.section {
+    margin: 3em;
+    background-color: rgb(13, 13, 81);
+}
+
+a {
+    color: rgb(241, 234, 235);
+
+}
+li {
+    margin-left: 2vw;
+    font-size: 15pt;
+    background-color: rgb(84, 58, 11);
+}
+li > a {
+    background-color: rgb(84, 58, 11);
+}
+.navsect {
+    font-size: 20pt;
+    margin-left: -5vw;
+    padding: 5vh;
+    
+}
+
+h5  {
+    color: white;
+    margin-left: -2vw;
+
+}
+div > p {
+    color: rgb(255, 243, 243);
+}
+.body > .nav {
+    position: fixed;
+    width: 15vw !important;
+    text-align: left !important;
+    vertical-align: left !important;
+    justify-items: left !important;
+    justify-self: left !important;
+    align-self: left !important;
+    align-items: left !important;
+    justify-content: left !important;
+    margin-left: -10vw !important;
+    margin-right: 10vw !important;
+  
+
+}
+.nav {
+    position: fixed;
+    width: 15vw !important;
+    text-align: left !important;
+    vertical-align: left !important;
+    justify-items: left !important;
+    justify-self: left !important;
+    align-self: left !important;
+    align-items: left !important;
+    justify-content: left !important;
+    margin-left: -18vw !important;
+    padding-left: 0 !important;
+    margin-right: 10vw !important;
+
+}
+
+.left {
+    margin-left: -10vw;
+    background-color: brown;
+}
+.left > a {
+    background-color: brown;
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.test {
+}
+
