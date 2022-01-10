@@ -10,6 +10,7 @@ const port = 8080
 app.use(morgan('dev'))
 app.listen(port, console.log(`port listening on ${port}`.red))
 app.use(express.static(__dirname + "/public"));
+app.use('/macrogreens', express.static(__dirname + "/public/macrogreens.html"))
 console.log(__dirname)
 app.use(express.json());
 app.use(
