@@ -4,10 +4,9 @@ const bodyParser = require('body-parser')
 const colors = require('colors')
 const moment = require('moment')
 
-
 // new code
 const app = express()
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 app.use(morgan('dev'))
 app.listen(port, console.log(`port listening on ${port}`.red))
 app.use(express.static(__dirname + "/public"));
