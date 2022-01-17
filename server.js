@@ -7,7 +7,7 @@ const moment = require('moment')
 
 // new code
 const app = express()
-const port = 5000
+var port = process.env.PORT || 3000;
 app.use(morgan('dev'))
 app.listen(port, console.log(`port listening on ${port}`.red))
 app.use(express.static(__dirname + "/public"));
