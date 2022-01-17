@@ -6,7 +6,7 @@ const moment = require('moment')
 
 // new code
 const app = express()
-const port = 80
+const port = 5000
 app.use(morgan('dev'))
 app.listen(port, console.log(`port listening on ${port}`.red))
 app.use(express.static(__dirname + "/public"));
@@ -18,4 +18,4 @@ app.use(
         extended: false,
     }))
 const api = require('./api/api')
-app.use('/api', api)
+app.use('/api', api);
