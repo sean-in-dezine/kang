@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.screen {
+    /* background-color: blue; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.topgrid {
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    /* background-color:red; */
+}
+
+.bottomcase {
+    /* background-color: pink; */
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: #f4f4f4;
+border-radius: 28px 28px 0px 0px;
+}
+
+.item {
+  
+    display: grid;
+    place-items: end center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black !important;
+    font-weight: 600;
+    font-size: 1.24rem;
+    
+}
+
+.item_name {
+    display: grid;
+    place-items: center;
+    /* padding-bottom: 1vh; */
+    letter-spacing: 0.8pt;
+    background-color: rgba(255, 252, 252, 0.2);
+    margin-top: 7vh;
+   
+}
+
+.broccoli {
+    background: url('../commercial_img/image\ 46-1.png');
+}
+.radish {
+    background: url('../commercial_img/image\ 46-2.png');
+}
+.sunflower {
+    background: url('../commercial_img/image\ 46-3.png');
+}
+.pea {
+    background: url('../commercial_img/image\ 46-4.png');
+}
+.kale {
+    background: url('../commercial_img/image\ 46-5.png');
+
+}
+.spicy {
+    background: url('../commercial_img/image\ 46-6.png');
+
+}
+.banana {
+    background: url('../commercial_img/image\ 46-7.png');
+
+}
+.peacock {
+    background: url('../commercial_img/image\ 47.png');
+
+}
+.fauci {
+    background: url('../commercial_img/image\ 48.png');
+    color: white;
+
+}
+.gates {
+    background: url('../commercial_img/image\ 49.png');
+    color: blue;
+}
+.biden {
+    background: url('../commercial_img/image\ 50.png');
+    color: white;
+
+}
+.samuel {
+    background: url('../commercial_img/image\ 46.png');
+    color: white;
+
+}
+
+
+.broccoli, .radish, .sunflower, .pea, .spicy, .kale, .banana, .peacock, .fauci, .gates, .biden, .samuel {
+    background-size: cover;
+    height: 65%;
+    width: 65%;
+    background-position: center;
+    display: grid;
+    place-items: end center;
+}
+
+.left {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 28px 28px 0px 0px;
+}
+
+.left > .title {
+    padding-top: 3vh;
+    height: 5vh;
+    padding-left: 3vh;
+    font-size: 1.2rem;
+    letter-spacing: 1pt;
+    padding-bottom: 3vh;
+}
+
+.left > .img {
+    background: url('../img/broccoli.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25vh;
+}
+
+.info {
+    background-color: green;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+}
+
+.right {
+    margin-top: 20%;
+    height: 90%;
+    display: grid;
+    /* background-color: purple; */
+}
+
+.right > div {
+    margin-right: 15%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.4rem;
+letter-spacing: 0.7pt;
+}
+.bottombuttons {
+    /* background-color: orange; */
+    background-color: #f4f4f4;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    place-items: center;
+    margin-left: 5vw;
+}
+
+.quantity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    place-items: center;
+
+}
+
+.less {
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+    background: #496D24;
+    border-radius: 14px;
+    font-size: 1rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .9pt;
+    font-weight: 400;
+    width: 49px;
+height: 50px;
+
+}
+.qty {
+    background-color: white;
+    border-radius: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .9pt;
+    font-weight: 400;
+    width: 49px;
+height: 50px;
+    display: grid;
+    place-items: center;
+    /* color: white; */
+    font-size: 2rem;
+}
+.more {
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+    background: #496D24;
+    border-radius: 14px;
+    font-size: 1rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .9pt;
+    font-weight: 400;
+    width: 49px;
+height: 50px;
+
+
+}
+
+
+.addcart {
+
+  height: 5vh;
+  width: 42vw;
+    display: grid;
+    place-items: center;
+
+    background: #496D24;
+    border-radius: 14px;
+    font-size: 1.3rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .9pt;
+    font-weight: 500;
+    /* margin-bottom: 1vh; */
+}
+
+.Cart {
+    height: 50vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.cart_item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    height: 5vh;
+    /* background-color: turquoise; */
+}
+
+.item_title {
+    background-color: turquoise;
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+}
+
+.remove {
+    background-color: red;
+    height: 5vh;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.item_quantity {
+    background-color: rgba(64, 224, 208, 0.198);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 5vh;
+}

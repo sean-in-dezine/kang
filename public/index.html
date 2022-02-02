@@ -5,182 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>KANG</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
 </head>
 
-
 <body>
-    <h2>kang documentation</h2>
-    <div class="nav" id="nav">
-        <ul>
 
 
-            <li>
-                <h4><a href="#front_end" class="href navsect">front end</a></h4>
-            </li>
-            <!--  *frontend -->
-            <li>
-                <a href="#kang_fetch" class="href">kang.fetch()</a>
-                <ul>
-                    <li class="left">
-                        <a href="#fetch_url" class="">fetch:url</a>
-                        <a href="#fetch_object" class="">fetch:object</a>
-                        <a href="#fetch_domelement" class="">fetch:domelement</a>
-                        <a href="#fetch_result" class="">fetch:result</a>
-                        <a href="#fetch_options" class="">fetch:options</a>
-                    </li>
+    <div class="screen">
+        <div class="topgrid">
+            <div class="item broccoli">
+                <div class="item_name">broccoli</div>
+            </div>
+            <div class="item radish">
+                <div class="item_name">radish</div>
+            </div>
+            <div class="item sunflower">
+                <div class="item_name">sunflower</div>
+            </div>
+            <div class="item pea">
+                <div class="item_name">pea</div>
+            </div>
+            <div class="item kale">
+                <div class="item_name">kale</div>
+            </div>
+            <div class="item spicy">
+                <div class="item_name">spicy</div>
+            </div>
+            <div class="item banana">
+                <div class="item_name">banana</div>
+            </div>
+            <div class="item peacock">
+                <div class="item_name">peacock</div>
+            </div>
+            <div class="item fauci">
+                <div class="item_name">fauci</div>
+            </div>
+            <div class="item gates">
+                <div class="item_name">gates</div>
+            </div>
+            <div class="item biden">
+                <div class="item_name">biden</div>
+            </div>
+            <div class="item samuel">
+                <div class="item_name">samuel</div>
+            </div>
 
-                </ul>
-            </li>
-            <li style="margin-top: 5em;">
-                <a href="#kang_log" class="href">kang.log</a>
-            </li>
-
-
-            <!--  *backend -->
-
-            <li>
-                <h4><a href="#back_end " class="href  navsect">backend</a></h4>
-            </li>
-
-        </ul>
-    </div>
-    
-
-
-    <!-- ?frontend -->
-    <div class="front_end section">
-        <a id="front_end"></a>
-        <h3>front-end</h3>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/E1P6k5_IKAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a id="kang_fetch"></a>
-        <div class="fetch">
-            <h4>kang.fetch()</h4>
-            <img src="./img/fetch.png" alt="">
-            <h5>parameters:</h5>
-            <p>
-                <a href="" id="fetch_url"></a>
-                url: pass in the '/location' you'd like to hit for the api
-                <br>
-                <br>
-                in the kang.fetch() function, the url defaults to window.location.origin + ${url} that you pass in, such
-                as '/api'
-                <br>
-                <br>
-                <tab>kang.fetch('/api')
-                    <br>//kang.fetch(window.location.origin + '/api')
-
-            </p>
-            <p> the fetch request defaults to a POST request</p>
-            <h5>object</h5>
-            <a href="" id="fetch_object"></a>
-            <img src="./img/fetch_user.png" alt="">
-            <p>
-                When fetching an object, it may be good practice to abstract your items with "code: {your keys: 'your
-                parameter'}"
-                <br><br>
-                This will come in handy later as when you want to reference your code, as distinguished from
-                auto-generated, responses, etc
-
-            </p>
-
-            <img src="./img/fetch_db.png" alt="">
-            <p>
-                alternatively, if you want to specifically target a collection, you can do that by defining the
-                collection in object.db.collection = 'Collection'
-
-                <br>
-                <br>
-                As well as if you want to define an action...
-            </p>
-            <a href="" id="fetch_domelement"></a>
-            <h5>domelement (optional)</h5>
-
-            <p>
-                when we pass in an element, it looks like this:
-            </p>
-
-            <img src="./img/fetch_element.png" alt="">
-            <p>
-
-
-                right now the domelement is messy as fuck!
-                but, this is the domelement that we want to manipulate. I'm sending a bunch of data to the server that
-                the domelement includes as a means of attempting to find it later.
-
-
-
-            </p>
-            <p>honestly, may not need it later (server side)</p>
-            <p>what the fetch object contains</p>
-            <img src="./img/elementinfo.png" alt="">
-            <p>and the server response:</p>
-            <img src="./img/server_elementinfo.png" alt="">
-            <p>
-
-            </p>
-            <a href="" id="fetch_result"></a>
-            <h5>result (optional)</h5>
-            <p>
-                this is what we're going to do with the domelement.. This should be a function defined however you want!
-
-
-                <br>
-                <br>
-                <br>
-                !!!!
-                maybe put the result function inside of the options????
-
-            </p>
-            <a href="" id="fetch_options"></a>
-            <h5>options (optional)</h5>
-            <p>
-                options are the method, and headers. By default, it assumes there's a body, headers are content-type:
-                application/json, and method is post
-
-                you can alternatively set, for instance, a get method like this:
-                <img src="./img/options_get.png" alt="">
-
-            </p>
-        </div>
-
-
-        <a id="kang_log"></a>
-        <div class="log">
-            <h4>kang.log</h4>
-            <h5>log</h5>
-            <img src="./img/log.png" alt="">
-            <p>this can be called at any time</p>
-            <h5>attaching it to the kang.fetch(object) parameter</h5>
-            <p>Automatically, when you call kang.fetch(url, object), the kang.log object is inserted into your object
-                with object.log</p>
-            <img src="./img/objectlog.png" alt="">
-            <p>say for instance, you had a user object where <br><br>
-                let user = {name, height, weight}
-                <br><br>
-                Since a fetch req is being made, typically we want to log this (you don't have to, but kang does this by
-                default). So when you receive {user} on the server side, user.log contains all of the additional log
-                information
-            </p>
-            <h5></h5>
 
         </div>
 
+        <div class="bottomcase">
+            <div class="left">
+                <div class="title">broccoli</div>
+                <div class="img"></div>
+                <div class="info">
+                    <div class="price">$21344</div>
+                    <div class="sku">sku: 123456</div>
+                    <div class="text">broccoli is shit for your body dont eat it just sell</div>
+                </div>
+                <div class="Cart">
+                    <!-- <div class="cart_item model">
+                        <div class="item_quantity model">2</div>
+                        <div class="item_title model">broccoli</div>
+                        <div class="remove">remove</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="cart">cart</div>
+                <div class="terms">terms</div>
+                <div class="delivery">delivery</div>
+            </div>
+        </div>
+
+        <div class="bottombuttons">
+            <div class="quantity">
+                <div class="less">-</div>
+                <div class="qty">1</div>
+                <div class="more">+</div>
+            </div>
+            <div class="addcart">
+                ADD TO CART
+            </div>
+        </div>
     </div>
 
+    <script>
 
+    </script>
 
-    <!-- ?backend -->
-    <div class="back_end section">
-        <a id="back_end">
-        </a>
-        <h3>back-end</h3>
-    </div>
-
-    <script src="./main.js" type="module"></script>
-
+    <script src="js/addcart.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/onload.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/items.js"></script>
 </body>
 
 </html>
