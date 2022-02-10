@@ -22,7 +22,7 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Push App
-        uses: sean-in-dezine/kang@v1
+        uses: kaneda-fr/dokku-set-env-vars@v1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           dokku-host: "macrogreens.farm"
