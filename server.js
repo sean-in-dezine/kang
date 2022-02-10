@@ -3,6 +3,25 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const colors = require('colors')
 const moment = require('moment')
+const mongoose = require('mongoose')
+
+
+const {
+    MongoClient
+} = require('mongodb');
+const uri = process.env.MONGO_URI;
+const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+client.connect(err => {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    collection.insertOne({
+        user: "tyler"
+    })
+})
+
 
 // new code
 const app = express()

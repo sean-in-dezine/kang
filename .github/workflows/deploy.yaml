@@ -20,3 +20,12 @@ jobs:
         with:
           git_remote_url: "ssh://dokku@macrogreens.farm:22/~/macrogreens"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Push App
+        uses: sean-in-dezine/kang@v1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          dokku-host: "macrogreens.farm"
+          app-name: "macrogreens"
+          var-name: "MONGO_URI"
+          var-value: ${{ secrets.MONGO_URI }}
