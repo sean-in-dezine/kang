@@ -15,12 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to dokku
-        uses: dokku/github-action@master
-        with:
-          git_remote_url: "ssh://dokku@macrogreens.farm:22/~/macrogreens"
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Push App
         uses: kaneda-fr/dokku-set-env-vars@v1
         with:
@@ -29,3 +23,10 @@ jobs:
           app-name: "macrogreens"
           var-name: "MONGO_URI"
           var-value: ${{ secrets.MONGO_URI }}
+          
+      - name: Push to dokku
+        uses: dokku/github-action@master
+        with:
+          git_remote_url: "ssh://dokku@macrogreens.farm:22/~/macrogreens"
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
